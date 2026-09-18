@@ -1,9 +1,8 @@
-/* Cores */
-:root{
+:root{/* deixar o titulo colorido */
     --azul:#2563EB;
     --rosa:#EC4899;
-    --branco:#F8FAFC;
-    --escuro:#0F172A;
+    --fundo:#F8FAFC;
+    --texto:#001850;
 }
 
 *{
@@ -14,33 +13,87 @@
 
 body{
     font-family:'Poppins', sans-serif;
-    background:var(--branco);
-    color:var(--escuro);
+    background:var(--fundo);
 }
 
-/* Cabeçalho */
+/* CABEÇALHO deixar ele colorido em degrade */
+
 header{
-    background:linear-gradient(90deg,var(--azul),var(--rosa));
+    background:#F8FAFC;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
+    padding:18px 8%;
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo img{
+    width:80px;
+    height:80px;
+    border-radius:12px;
+}
+
+.logo h1{
     font-family:'Orbitron', sans-serif;
-    color:white;
-    font-size:28px;
+    font-size:52px;
+    font-style:italic;
+    background:linear-gradient(90deg,#2563EB,#EC4899);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
 nav a{
-    color:white;
     text-decoration:none;
-    margin-left:25px;
+    color:#001850;
+    margin-left:35px;
     font-weight:600;
-    transition:0.3s;
+    font-size:22px;
 }
 
-nav a:hover{
-    color:#ffd6ea;
+nav a.ativo{
+    color:var(--azul);
+    border-bottom:4px solid var(--rosa);
+    padding-bottom:6px;
 }
+
+/* BANNER ner do fundo com uma imagem que escolhemos*/
+
+.banner{
+    height:500px;
+    padding:0px 8%;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,24,80,.45),rgba(0,24,80,.45)),
+    url("imagem_banner .png")   ;
+
+    background-size:cover;
+    background-position:center;
+}
+
+.informacoes{
+    display:flex;
+    gap:35px;
+    font-size:30px;
+    margin-bottom:0px;
+}
+
+.banner h2{
+    font-family:'Orbitron', sans-serif;
+    font-size:60px;
+    line-height:1.1;
+    margin-bottom:25px;
+    max-width:850px;
+}
+
+.banner h2 span{
+    background:linear-gradient(90deg,#2563EB,#EC4899);
+    
+    -webkit-text-fill-color:transparent;
+}
+
