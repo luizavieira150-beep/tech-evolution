@@ -74,6 +74,15 @@ nav a.ativo{
 
     background-size:cover;
     background-position:center;
+      background-repeat: no-repeat;
+
+   
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
 }
 
 .informacoes{
@@ -97,3 +106,8 @@ nav a.ativo{
     -webkit-text-fill-color:transparent;
 }
 
+.banner p{
+    font-size:26px;
+    max-width:780px;
+    line-height:1.6;
+}
