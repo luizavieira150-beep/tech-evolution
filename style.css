@@ -1,0 +1,46 @@
+/* Cores */
+:root{
+    --azul:#2563EB;
+    --rosa:#EC4899;
+    --branco:#F8FAFC;
+    --escuro:#0F172A;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:var(--branco);
+    color:var(--escuro);
+}
+
+/* Cabeçalho */
+header{
+    background:linear-gradient(90deg,var(--azul),var(--rosa));
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-family:'Orbitron', sans-serif;
+    color:white;
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd6ea;
+}
