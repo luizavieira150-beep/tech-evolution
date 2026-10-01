@@ -1,0 +1,163 @@
+/* =========================
+   MAIN
+========================= */
+
+main {
+    background: #F8FAFC;
+    color: #001850;
+    padding: 60px 8%;
+    font-family: 'Poppins', sans-serif;
+}
+
+main section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   TÍTULOS PRINCIPAIS
+========================= */
+
+main h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 38px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    background: linear-gradient(90deg, #2563EB, #EC4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main h1:first-child {
+    margin-top: 0;
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+
+main p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #001850;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TÍTULOS DAS PALESTRAS
+========================= */
+
+main h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #001850;
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   IMAGENS DOS PALESTRANTES
+========================= */
+
+main img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    border-radius: 18px;
+    border: 4px solid #2563EB;
+
+    box-shadow: 0 6px 15px rgba(0, 24, 80, 0.15);
+}
+
+
+/* =========================
+   NOME DOS PALESTRANTES
+========================= */
+
+main img + p {
+    color: #2563EB;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   WORKSHOPS
+========================= */
+
+main h1:nth-of-type(2) {
+    margin-top: 65px;
+}
+
+main h1:nth-of-type(2) ~ h2 {
+    color: #2563EB;
+}
+
+
+/* =========================
+   PROGRAMAÇÃO
+========================= */
+
+main h1:nth-of-type(3) {
+    margin-top: 65px;
+}
+
+main h1:nth-of-type(3) ~ h2 {
+    background: white;
+
+    border-left: 5px solid #EC4899;
+    border-radius: 10px;
+
+    padding: 18px 22px;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    box-shadow: 0 4px 12px rgba(0, 24, 80, 0.08);
+}
+
+main h1:nth-of-type(3) ~ h2 + p {
+    margin-bottom: 8px;
+    padding-left: 22px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 45px 6%;
+    }
+
+    main h1 {
+        font-size: 30px;
+    }
+
+    main h2 {
+        font-size: 20px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    main img {
+        width: 160px;
+        height: 160px;
+    }
+}
