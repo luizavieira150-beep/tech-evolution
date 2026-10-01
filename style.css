@@ -1,0 +1,82 @@
+/*CSS do Footer!!!*/
+
+footer{
+    background:#001850;
+    color:#F8FAFC;
+    padding:45px 8% 20px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+}
+
+/* Títulos do footer*/
+
+footer h2{
+    font-family:'Orbitron', sans-serif;
+    font-size:24px;
+    margin-bottom:20px;
+
+    background:linear-gradient(90deg,#2563EB,#EC4899);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/*textos do footer*/
+
+footer p{
+    font-family:'Poppins', sans-serif;
+    font-size:15px;
+    color:#F8FAFC;
+    margin-bottom:8px;
+    line-height:1.5;
+}
+
+/*organiza o li*/
+
+footer ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+footer li{
+    margin-bottom:10px;
+}
+
+/* links do footer*/
+
+footer a{
+    font-family:'Poppins', sans-serif;
+    font-size:15px;
+    color:#F8FAFC;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:#EC4899;
+}
+
+
+/*responsividade do footer*/
+
+@media(max-width:800px){
+
+    footer{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:500px){
+
+    footer{
+        grid-template-columns:1fr;
+        padding:35px 6% 20px;
+    }
+
+    footer > p{
+        grid-column:auto;
+    }
+
+}
