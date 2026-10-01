@@ -1,82 +1,113 @@
-/*CSS do Footer!!!*/
-
-footer{
-    background:#001850;
-    color:#F8FAFC;
-    padding:45px 8% 20px;
-
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:40px;
+:root{/* deixar o titulo colorido */
+    --azul:#2563EB;
+    --rosa:#EC4899;
+    --fundo:#F8FAFC;
+    --texto:#001850;
 }
 
-/* Títulos do footer*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-footer h2{
+body{
+    font-family:'Poppins', sans-serif;
+    background:var(--fundo);
+}
+
+/* CABEÇALHO deixar ele colorido em degrade */
+
+header{
+    background:#F8FAFC;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo img{
+    width:80px;
+    height:80px;
+    border-radius:12px;
+}
+
+.logo h1{
     font-family:'Orbitron', sans-serif;
-    font-size:24px;
-    margin-bottom:20px;
-
+    font-size:52px;
+    font-style:italic;
     background:linear-gradient(90deg,#2563EB,#EC4899);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
 
-/*textos do footer*/
-
-footer p{
-    font-family:'Poppins', sans-serif;
-    font-size:15px;
-    color:#F8FAFC;
-    margin-bottom:8px;
-    line-height:1.5;
-}
-
-/*organiza o li*/
-
-footer ul{
-    list-style:none;
-    padding:0;
-    margin:0;
-}
-
-footer li{
-    margin-bottom:10px;
-}
-
-/* links do footer*/
-
-footer a{
-    font-family:'Poppins', sans-serif;
-    font-size:15px;
-    color:#F8FAFC;
+nav a{
     text-decoration:none;
+    color:#001850;
+    margin-left:35px;
+    font-weight:600;
+    font-size:22px;
 }
 
-footer a:hover{
-    color:#EC4899;
+nav a.ativo{
+    color:var(--azul);
+    border-bottom:4px solid var(--rosa);
+    padding-bottom:6px;
 }
 
+/* BANNER ner do fundo com uma imagem que escolhemos*/
 
-/*responsividade do footer*/
+.banner{
+    height:500px;
+    padding:0px 8%;
+    color:white;
 
-@media(max-width:800px){
+    background:
+    linear-gradient(rgba(0,24,80,.45),rgba(0,24,80,.45)),
+    url("imagem_banner .png")   ;
 
-    footer{
-        grid-template-columns:repeat(2,1fr);
-    }
+    background-size:cover;
+    background-position:center;
+      background-repeat: no-repeat;
 
+   
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
 }
 
-@media(max-width:500px){
+.informacoes{
+    display:flex;
+    gap:35px;
+    font-size:30px;
+    margin-bottom:0px;
+}
 
-    footer{
-        grid-template-columns:1fr;
-        padding:35px 6% 20px;
-    }
+.banner h2{
+    font-family:'Orbitron', sans-serif;
+    font-size:60px;
+    line-height:1.1;
+    margin-bottom:25px;
+    max-width:850px;
+}
 
-    footer > p{
-        grid-column:auto;
-    }
+.banner h2 span{
+    background:linear-gradient(90deg,#2563EB,#EC4899);
+    
+    -webkit-text-fill-color:transparent;
+}
 
+.banner p{
+    font-size:26px;
+    max-width:780px;
+    line-height:1.6;
 }
